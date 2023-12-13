@@ -16,6 +16,10 @@
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: black;
@@ -54,10 +58,16 @@ ul {
 li {
     padding: 0px 10px;
     margin-left: 15px;
+    
+}
+
+li>a, a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 #bordacontatos {
-    background-color: var(--cor0);    
+    background-color: var(--cor0);
     color: white;
 }
 
@@ -71,7 +81,7 @@ main {
 #infocontainer {
     /*border: solid 1px red;*/
     display: flex;
-    flex-direction: row-reverse;    
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     height: 90vh;
@@ -125,7 +135,7 @@ main {
     height: 100vh;
     width: auto;
     background-image: url("../imagens/pexels-luis-gomes-546819.png");
-    background-size: 100vw;   
+    background-size: 100vw;
     background-repeat: no-repeat;
 }
 
@@ -205,8 +215,7 @@ main {
     justify-content: space-between;
     height: 450px;
     width: 275px;
-    padding: 3px;
-    color: var(--cor2);    
+    color: var(--cor2);
 }
 
 .titulocard {

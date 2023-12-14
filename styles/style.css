@@ -45,6 +45,10 @@ header {
     color: white;
 }
 
+#logo200px {
+    height: 70px;
+}
+
 #logoIgorColor {
     color: var(--cor0);
 }

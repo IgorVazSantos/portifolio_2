@@ -6,6 +6,7 @@
     --cor0: #F71735;
     --cor1: #01A7C2;
     --cor2: #2F3E46;
+    --cor3: #2f3034;
 
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-destaque: 'Poppins';
@@ -36,7 +37,8 @@ header {
     height: 10vh;
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 27px;
+    color: #2F3E46;
 }
 
 #logo {
@@ -60,7 +62,7 @@ ul {
 }
 
 li {
-    padding: 0px 10px;
+    padding: 5px 10px;
     margin-left: 15px;
     
 }
@@ -72,6 +74,7 @@ li>a, a:visited {
 
 #bordacontatos {
     background-color: var(--cor0);
+    border-radius: 10px;
     color: white;
 }
 
@@ -111,14 +114,13 @@ main {
 #olainicial {
     color: var(--cor1);
     font-family: 'Poppins';
-    font-size: 2.25rem;
     padding-bottom: 10px;
 }
 
 #brevedescricao {
     color: var(--cor2);
     font-family: 'Poppins';
-    font-size: 1.125rem;
+    font-size: 1rem;
     padding-bottom: 10px;
 }
 
@@ -138,18 +140,19 @@ main {
     display: flex;
     height: 100vh;
     width: auto;
-    background-image: url("../imagens/pexels-luis-gomes-546819.png");
-    background-size: 100vw;
+    background-image: url("../images/pexels-luis-gomes-546819.png");
+    background-size: auto;
     background-repeat: no-repeat;
 }
 
 #titulosobre {
-    width: 100px;
-    font-size: 1.875rem;
+    /* width: 100px; */
+    font-size: 1.688rem;
     color: white;
     background-color: var(--cor0);
+    border-radius: 10px;
     align-self: center;
-    padding: 15px 20px;
+    padding: 5px 10px;
     margin-bottom: 30px;
 }
 
@@ -165,7 +168,7 @@ main {
 }
 
 #cardsobrecontainer {
-    padding: 0px 200px;
+    padding: 20px 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -176,10 +179,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 500px;
     width: 300px;
-    padding: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
     font-family: 'Poppins';
     color: var(--cor2);
     font-size: 0.938rem;
@@ -189,11 +193,11 @@ main {
 
 /*css direcionado ao container projeto*/
 #TituloProjetos {
-    padding: 15px 20px;
-    margin: 10px;
+    padding: 5px 10px;
     align-self: center;
     background-color: #F71735;
-    font-size: 1.875rem;
+    border-radius: 10px;
+    font-size: 1.688rem;
     color: white;
 }
 
@@ -202,36 +206,39 @@ main {
     flex-direction: column;
     justify-content: space-around;
     height: auto;
+    padding: 20px 200px;
+    background-image: linear-gradient(to bottom, #37393d, #2f3034);
 }
 
 #projetos {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px 200px;
 }
 
 .cartaoProjeto {
     /* border: solid 2px #F71735; */
-    background-color: #01a8c22c;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 450px;
-    width: 275px;
+    border-radius: 10px;
+    height: 470px;
+    width: 295px;
     color: var(--cor2);
 }
 
 .titulocard {
     /* border: solid 1px blue; */
     color: #01A7C2;
-    padding: 0px 10px;
+    padding: 10px;
     font-size: 1.125rem;
 }
 
 .descricaocard {
     /* border: solid 1px blue; */
-    padding: 0px 10px;
+    padding: 10px;
     font-size: 0.813rem;
     font-weight: 300;
     text-align: left;
@@ -239,9 +246,12 @@ main {
 
 .iconesTecnologias {
     /* border: solid 1px blue; */
-    padding: 0px 10px;
+    padding: 10px;
 }
 
+.img_card_project {
+    border-radius: 10px 10px 0px 0px;
+}
 
 /*.iconesTecnologias {
 
@@ -252,11 +262,11 @@ main {
 footer {
     font-family: 'Poppins';
     color: white;
-    background-color: var(--cor2);
+    background-color: #2f3034;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 200px;
+    padding: 10px 200px;
 }
 
 #fticon {
@@ -266,7 +276,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     width: 200px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #ftemail {
@@ -275,7 +285,7 @@ footer {
     flex: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 #ftemail>p {
@@ -288,5 +298,36 @@ footer {
     color: #9A9595;
     font-size: 12px;
     font-weight: 100;
-    padding: 10px 0px;
+    padding: 10px;
+}
+
+@media (max-width: 480px){
+    header {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        font-size: 2rem;
+        color: white;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #infoApresentacao {
+        font-size: 1rem;
+    }
+
+    #foto {
+        width: 100vw;
+    }
+
+    #infocontainer, #sobrecontainer, #projetocontainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }

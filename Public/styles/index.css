@@ -24,11 +24,9 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     color: black;
-    /*overflow: hidden;*/
 }
 
 header {
-    /*border: solid 1px red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,7 +84,6 @@ main {
 }
 
 #infocontainer {
-    /*border: solid 1px red;*/
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -146,7 +143,6 @@ main {
 }
 
 #titulosobre {
-    /* width: 100px; */
     font-size: 1.688rem;
     color: white;
     background-color: var(--cor0);
@@ -157,7 +153,6 @@ main {
 }
 
 #Sobre {
-    /*border: 1px solid red;*/
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -175,7 +170,6 @@ main {
 }
 
 .infocard {
-    /*border: solid 1px red;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,6 +183,8 @@ main {
     font-size: 0.938rem;
     font-weight: 400;
     text-align: center;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+             -15px -15px 30px rgb(60, 60, 60);
 }
 
 /*css direcionado ao container projeto*/
@@ -207,18 +203,17 @@ main {
     justify-content: space-around;
     height: auto;
     padding: 20px 200px;
-    background-image: linear-gradient(to bottom, #37393d, #2f3034);
+    background-image: linear-gradient(to bottom, #37393d, #202123);
 }
 
 #projetos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 20px 200px;
+    padding: 20px 0px;
 }
 
 .cartaoProjeto {
-    /* border: solid 2px #F71735; */
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -227,17 +222,17 @@ main {
     height: 470px;
     width: 295px;
     color: var(--cor2);
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+             -15px -15px 30px rgb(60, 60, 60);
 }
 
 .titulocard {
-    /* border: solid 1px blue; */
     color: #01A7C2;
     padding: 10px;
     font-size: 1.125rem;
 }
 
 .descricaocard {
-    /* border: solid 1px blue; */
     padding: 10px;
     font-size: 0.813rem;
     font-weight: 300;
@@ -245,7 +240,6 @@ main {
 }
 
 .iconesTecnologias {
-    /* border: solid 1px blue; */
     padding: 10px;
 }
 
@@ -270,7 +264,6 @@ footer {
 }
 
 #fticon {
-    /* border: solid 1px red; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -280,7 +273,6 @@ footer {
 }
 
 #ftemail {
-    /*border: solid 1px red;*/
     display: flex;
     flex: row;
     justify-content: space-between;
